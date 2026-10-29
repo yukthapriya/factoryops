@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+/* Dark industrial theme. Chart colors are the validated dark-mode steps of the reference
+   categorical palette; status colors are reserved for state and always paired with a label. */
+@theme {
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --color-page: #0d0e10;
+  --color-panel: #14161a;
+  --color-panel-raised: #1b1e23;
+  --color-line: #2a2d33;
+  --color-line-strong: #3a3e46;
+  --color-ink: #f0efec;
+  --color-ink-2: #c3c2b7;
+  --color-ink-3: #8f8d86;
+  --color-accent: #3987e5;
+  --color-accent-strong: #2a78d6;
+
+  --color-series-1: #3987e5;
+  --color-series-2: #d95926;
+  --color-series-3: #199e70;
+  --color-series-4: #c98500;
+
+  --color-good: #0ca30c;
+  --color-warning: #fab219;
+  --color-serious: #ec835a;
+  --color-critical: #d03b3b;
+  --color-info: #6da7ec;
+  --color-neutral: #8f8d86;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    @apply bg-page font-sans text-ink antialiased;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+[data-density="compact"] .density-cell {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}

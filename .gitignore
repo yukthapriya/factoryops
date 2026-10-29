@@ -1,0 +1,26 @@
+# secrets
+.env
+*.env
+!.env.example
+# python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+# node
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+# local data / os
+*.db
+*.sqlite
+pgdata/
+.DS_Store
+*.log
+
+# downloaded datasets (fetch with `cli ai4i-download`; CC BY 4.0, see README)
+backend/data/
