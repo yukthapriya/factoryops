@@ -23,7 +23,7 @@ FactoryOps ingests telemetry from 15 simulated machines through Kafka, validates
 </p>
 
 <p align="center">
-  <a href="factoryops-demo.mov">Watch the full original recording (MOV)</a>
+  <a href="Screen%20Recording%20factoryops.mov">Watch the full original recording (MOV)</a>
 </p>
 
 > **Data honesty.** The live plant (equipment, telemetry, defects, thresholds) is **simulated**. The historical benchmark is the public UCI AI4I 2020 dataset, which UCI itself describes as **synthetic** ("a synthetic dataset that reflects real predictive maintenance data encountered in industry"). Neither is data from Tesla or any other manufacturer, and no result here demonstrates real factory performance.
