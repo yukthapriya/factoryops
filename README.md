@@ -15,7 +15,7 @@ FactoryOps ingests telemetry from 15 simulated machines through Kafka, validates
 ## FactoryOps Demo
 
 <p align="center">
-  <img src="factoryops-demo.gif" alt="FactoryOps manufacturing monitoring demo" height="500" width="700">
+  <img src="factoryops-demo.gif" alt="FactoryOps manufacturing monitoring demo" height="400" width="700">
 </p>
 
 <p align="center">
