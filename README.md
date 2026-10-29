@@ -13,16 +13,12 @@ On a production line, unplanned equipment failures scrap parts and stop the line
 FactoryOps ingests telemetry from 15 simulated machines through Kafka, validates and de-duplicates every event, stores it in PostgreSQL, raises threshold and Shewhart SPC alerts, tracks production runs and defects, and pushes live updates to React over WebSockets. Separately, it imports the AI4I 2020 CSV into its own `historical` schema, with provenance, validation and idempotency, and serves failure analysis and offline model evaluation.
 
 ## FactoryOps Demo
-<div align="center" style="border: 1px solid #d1d5db; border-radius: 8px; padding: 16px;">
-
-  <img src="factoryops-demo.gif" alt="FactoryOps manufacturing monitoring demo" width="320">
+<div align="center">
+  <img src="factoryops-demo.gif" alt="FactoryOps manufacturing monitoring demo" width="400">
 
   <p><em>Live manufacturing telemetry, equipment monitoring, and predictive maintenance.</em></p>
 
-  <p>
-    <a href="Screen%20Recording%20factoryops.mov">Watch the full original recording (MOV)</a>
-  </p>
-
+  <p><a href="Screen%20Recording%20factoryops.mov">Watch the full original recording (MOV)</a></p>
 </div>
 
 > **Data honesty.** The live plant (equipment, telemetry, defects, thresholds) is **simulated**. The historical benchmark is the public UCI AI4I 2020 dataset, which UCI itself describes as **synthetic** ("a synthetic dataset that reflects real predictive maintenance data encountered in industry"). Neither is data from Tesla or any other manufacturer, and no result here demonstrates real factory performance.
