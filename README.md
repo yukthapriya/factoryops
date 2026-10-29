@@ -532,3 +532,9 @@ factoryops/
 ├── docker-compose.yml, .env.example, Makefile, scripts/test.sh
 └── .github/workflows/ci.yml
 ```
+
+## Demo Video
+
+Watch the FactoryOps demo recording:
+
+[▶ Watch FactoryOps](Screen%20Recording%20factoryops.mp4)
